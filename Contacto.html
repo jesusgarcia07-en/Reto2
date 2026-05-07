@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - BLST</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container"><img src="Fotos/Logo BLST.png" class="logo-img"><span class="logo-text">BLST</span></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Sobre_Nosotros.html">Sobre nosotros</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Pieza.html">Venta de piezas</a></li>
+                <li><a href="Juego.html">Juego</a></li>
+                <li><a href="Contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="apartado">
+            <h1>Formulario de contacto</h1>
+            <form class="formulario" action="index.php" method="POST">
+                <label for="nom">Nombre completo:</label>
+                <input type="text" id="nom" name="nombre" placeholder="Escribe tu nombre..." required>
+
+
+                <label for="ema">Correo electronico:</label>
+                <input type="email" id="ema" name="email" placeholder="ejemplo@correo.com" required>
+
+
+                <label for="msg">Mensaje o consulta:</label>
+                <textarea id="msg" name="mensaje" placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
+
+
+                <div class="encuesta">
+                    <p>¿Cómo valoras nuestra iniciativa de reciclaje?</p>
+                    <label><input type="radio" name="valoracion" value="muy_buena"> Muy buena</label><br>
+                    <label><input type="radio" name="valoracion" value="buena"> Buena</label><br>
+                    <label><input type="radio" name="valoracion" value="regular"> Regular</label>
+                </div>
+
+
+                <div class="encuesta">
+                    <p>¿Deseas recibir noticias en tu email?</p>
+                    <label><input type="checkbox" name="boletin" value="si"> Sí, deseo suscribirme</label>
+                </div>
+                <button type="submit" class="btn-verde">Enviar información</button>
+            </form>
+        </section>
+    </main>
+    <footer><p>&copy; 2025 BLST | Email: BLST@gmail.com | Teléfono: +34 123 456 789</p></footer>
+</body>
+</html>
